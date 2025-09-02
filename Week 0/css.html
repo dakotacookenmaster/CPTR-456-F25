@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        aside > div {
+            background: orange;
+        }
+
+        aside > div > div {
+            background: green;
+        }
+
+        div + p {
+            border: 2px dotted cadetblue;
+        }
+
+        div ~ p {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <div>
+            <div>
+                <p>First</p>
+            </div>
+            <p>Second</p>
+        </div>
+        <p>Third</p>
+        <p>Fourth</p>
+        <p>Fourth</p>
+        <p>Fourth</p>
+        <p>Fourth</p>
+        <h1>Random H1</h1>
+        <p>Another paragraph</p>
+    </aside>
+</body>
+
+</html>
