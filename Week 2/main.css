@@ -1,0 +1,55 @@
+/* CSS RESET */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/****************/
+
+/* Main Content */
+@keyframes swim-and-wobble {
+    25% {
+        transform: translateX(150px) rotate(40deg) scale(5) skew(2in);
+    }
+    50% {
+        transform: translateX(300px) rotate(0deg) scale(0.25);
+    }
+    75% {
+        transform: translateX(450px) rotate(-40deg) scale(5);
+    }
+    100% {
+        transform: translateX(600px) rotate(0deg) scale(0.2);
+    }
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background: blue;
+    padding-top: calc(50vh - 50px);
+}
+
+section {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 0 auto;
+    transition: 1s ease-in;
+    clip-path: polygon(0 100%, 50% 0, 100% 100%, 0 100%);
+    /* animation: swim-and-wobble 4s linear forwards; */
+}
+
+section:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* section:hover {
+    margin-top: 50px;
+    transform: rotate(60deg);
+    transform-origin: center left;
+} */
