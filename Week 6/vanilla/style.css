@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#cards > div {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 5px 5px 5px 2px #ccc;
+    background: rgb(132, 132, 199);
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Box containing buttons */
+#cards div div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#cards div div button {
+    padding: 10px;
+}
